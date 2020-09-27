@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11ty POC</title>
+  </head>
+  <body>
+    Proof of concept
+    {% for item in portfolio %}
+      {{ item.name }}
+      
+      {% for tag in item.tags %}
+        {{ tag }}
+      {% endfor %}
+
+      <img src="{{ item.imageUrls.coverImage }}" />
+      <img src="{{ item.imageUrls.secondaryImage }}" />
+    {% endfor %}
+  </body>
+</html>
