@@ -31,3 +31,4 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_dir: ./build
+        cname: www.11ty-poc.ml
